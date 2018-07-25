@@ -1,0 +1,6 @@
+name: KaigunPlsWarnPlugin
+version: ${project.version}
+main: com.kaigun2929.mytestplugin.KaigunPlsWarnPlugin
+
+commands:
+  warn:

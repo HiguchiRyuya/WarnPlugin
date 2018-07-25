@@ -1,0 +1,6 @@
+name: KaigunPlsWarnPlugin
+version: 2.0.3
+main: com.kaigun2929.mytestplugin.KaigunPlsWarnPlugin
+
+commands:
+  warn:
