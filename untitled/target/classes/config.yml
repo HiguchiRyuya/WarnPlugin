@@ -1,0 +1,9 @@
+WarnSetting:
+  TitleMessage:
+    Main: "警告中！！警告中！"
+    Sub: "warnning!!warnning"
+    FadeIn: 20
+    Stay: 60
+    FadeOut: 20
+  ChatMessage:
+    target: "警告中です。以下の理由により警告を促しています。"
