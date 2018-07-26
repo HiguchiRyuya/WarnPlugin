@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.kaigun2929</groupId>
-    <artifactId>MyTestPlugin</artifactId>
-    <version>1.0.0</version>
+    <artifactId>KaigunPlsWarnPlugin</artifactId>
+    <version>3.1.1</version>
     <packaging>jar</packaging>
 
-    <name>MyTestPlugin</name>
+    <name>KaigunPlsWarnPlugin</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

@@ -6,4 +6,8 @@ WarnSetting:
     Stay: 60
     FadeOut: 20
   ChatMessage:
-    target: "警告中です。以下の理由により警告を促しています。"
+    Target: "警告中です。以下の理由により警告を促しています。"
+  PlaySound:
+    SoundName: "ENTITY_ZOMBIE_PIG_DEATH"
+    Volume: 1
+    Pitch: 1

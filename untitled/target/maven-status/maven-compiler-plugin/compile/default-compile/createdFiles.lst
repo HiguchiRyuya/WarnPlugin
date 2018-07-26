@@ -1,2 +1,4 @@
 com\kaigun2929\mytestplugin\Config.class
-com\kaigun2929\mytestplugin\MyTestPlugin.class
+com\kaigun2929\mytestplugin\WarnLog.class
+com\kaigun2929\mytestplugin\KaigunPlsWarnPlugin.class
+com\kaigun2929\mytestplugin\WarnSound.class
