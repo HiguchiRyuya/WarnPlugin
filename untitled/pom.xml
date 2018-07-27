@@ -6,7 +6,7 @@
 
     <groupId>com.kaigun2929</groupId>
     <artifactId>KaigunPlsWarnPlugin</artifactId>
-    <version>3.1.1</version>
+    <version>4.0.0</version>
     <packaging>jar</packaging>
 
     <name>KaigunPlsWarnPlugin</name>

@@ -8,25 +8,25 @@ package com.kaigun2929.mytestplugin;
 
 import org.bukkit.Location;
 import org.bukkit.Sound;
-import org.bukkit.SoundCategory;
-import org.bukkit.entity.Player;
-
 
 public class WarnSound {
 
-    private Config config;
+    private String soundName ;
+    private int vol;
+    private int pitch;
 
-    public void PlaySound(Location targetPos){
-
-        /*
-        Location loc;
-        Sound sound = ;
-        int vol = 1;
-        int pitch = 1;
-        loc.getWorld().playSound(targetPos,sound,vol,pitch);
-        */
-
+    // サウンドのコンストラクタ
+    public WarnSound(Config config){
+        // セット
+        this.soundName = config.getSoundName();
+        this.vol = config.getVol();
+        this.pitch = config.getPitch();
     }
 
+    // サウンドを発生
+    public void PlaySound(Location targetLocation){
+        targetLocation.getWorld().playSound(targetLocation,Sound.valueOf(soundName.toUpperCase()),vol,pitch);
 
+
+    }
 }

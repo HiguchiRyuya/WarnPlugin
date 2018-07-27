@@ -26,11 +26,11 @@ public class Config {
 
     private String chatMessage;
 
-    /*
+
     private String soundName;
     private int vol;
     private int pitch;
-    */
+
 
     public Config(Plugin plugin) {
         this.plugin = plugin;
@@ -61,11 +61,11 @@ public class Config {
 
         chatMessage = config.getString("WarnSetting.ChatMessage.Target");
 
-        /*
+
         soundName = config.getString("WarnSetting.PlaySound.SoundName");
         vol = config.getInt("WarnSetting.PlaySound.Volume");
         pitch = config.getInt("WarnSetting.PlaySound.Pitch");
-        */
+
     }
 
     /**
@@ -95,13 +95,13 @@ public class Config {
         return fadeOutTime;
     }
 
-    /*
+
     public String getSoundName() { return soundName; }
 
     public int getVol() { return vol; }
 
     public int getPitch() { return pitch; }
-    */
+
 
 
     /**

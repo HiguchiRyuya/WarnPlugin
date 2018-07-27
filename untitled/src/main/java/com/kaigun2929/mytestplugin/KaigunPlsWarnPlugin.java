@@ -17,9 +17,9 @@ import org.bukkit.plugin.PluginManager;
 
 public class KaigunPlsWarnPlugin extends JavaPlugin implements Listener {
 
-
     private Config config;
     private WarnLog log;
+    private WarnSound sound;
 
     @Override
     public void onEnable() {
@@ -37,20 +37,18 @@ public class KaigunPlsWarnPlugin extends JavaPlugin implements Listener {
             System.out.print("configファイルを読み込みました。");
         }
 
+        sound = new WarnSound(config);
         log = new WarnLog();
 
         // Plugin startup logic
         System.out.println("WarnPluginが有効になりました。");
         getServer().getPluginManager().registerEvents(this, this);
-
     }
 
     @Override
     public void onDisable() {
-
         // Plugin shutdown logic
         System.out.print("WarnPluginが無効になりました。");
-
     }
 
     @Override
@@ -78,6 +76,8 @@ public class KaigunPlsWarnPlugin extends JavaPlugin implements Listener {
                     // 処理実行
                     sender.sendMessage(ChatColor.DARK_GREEN + ("コマンドが実行されました"));
 
+                    // サウンドを鳴らす
+                    sound.PlaySound(target.getLocation());
                     // 警告処理
                     target.sendTitle(ChatColor.RED + config.getMainTitleMessage(),
                             ChatColor.RED + config.getSubTitleMessage(),
